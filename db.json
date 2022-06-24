@@ -1,3 +1,18 @@
 {
-    
+    "cards":[
+        {
+            "id":1,
+            "word":"apple",
+            "translate":"яблуко",
+            "transcription":"[ap.le]",
+            "img":"https://e7.pngegg.com/pngimages/14/397/png-clipart-apple-fruit-crumble-gift-basket-snack-apple-natural-foods-image-file-formats.png"
+        },
+        {
+            "id":2,
+            "word":"cat",
+            "translate":"кіт",
+            "transcription":"[kat]",
+            "img":"https://www.pngmart.com/files/1/Cat-PNG-Picture.png"
+        }
+    ]
 }
