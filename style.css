@@ -10,7 +10,7 @@ body{
 }
 
 .wrapper{
-    max-width: 300px;
+    max-width: 250px;
     margin: 50px auto;
     display: flex;
     flex-direction: column;
@@ -35,12 +35,13 @@ img{
     display: flex;
 }
 
-#answer, #btn{
+#answer{
     font-size: 24px;
     border:  none;
     border-bottom: 2px solid black;
     background: transparent;
     color: white;
+    width: 200px;
 }
 
 #answer:focus{
