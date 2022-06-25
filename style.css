@@ -77,7 +77,7 @@ img{
 #btn:after {
   content: '';
   position: absolute;
-  border: 1px solid #000000;
+  border: 2px dashed #000000;
   bottom: 4px;
   left: 4px;
   width: calc(100% - 1px);
