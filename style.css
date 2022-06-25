@@ -5,9 +5,12 @@
 
 body{
     background: linear-gradient(to right, #42a7f5, #183a54);
+    font-family: sans-serif;
+    font-size: 18px;
 }
 
 .wrapper{
+    max-width: 300px;
     margin: 50px auto;
     display: flex;
     flex-direction: column;
@@ -25,4 +28,63 @@ body{
 
 img{
     max-width: 300px;
+}
+
+#form{
+    margin-top: 20px;
+    display: flex;
+}
+
+#answer, #btn{
+    font-size: 24px;
+    border:  none;
+    border-bottom: 2px solid black;
+    background: transparent;
+    color: white;
+}
+
+#answer:focus{
+    outline: none;
+}
+
+#btn{
+  background-color: #3DD1E7;
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  padding: 10px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#btn:focus {
+  outline: 0;
+}
+
+#btn:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+#btn:hover:after {
+  bottom: 2px;
+  left: 2px;
 }
