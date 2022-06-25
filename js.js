@@ -1,4 +1,5 @@
 const url = "https://my-json-server.typicode.com/Destr0it/englishForKids/cards";
+const speech = window.speechSynthesis;
 
 $.ajax({
     url: url,
@@ -14,4 +15,18 @@ function drawCard(data){
         <hr>
         <h1>${data.translate}</h1>
     `);
+    speakNow(data.word+"");
 }
+
+function speakNow(text){
+    if ("speechSynthesis" in window) {
+      const msg = new SpeechSynthesisUtterance();
+      const voices = speech.getVoices();
+      msg.voice = voices[1];
+      msg.lang = "en-US";
+      msg.text = text;
+      window.speechSynthesis.speak(msg);
+    } else {
+      alert("Sorry, your browser doesn't support text to speech!");
+    }
+  };
